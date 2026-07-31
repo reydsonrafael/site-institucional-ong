@@ -1,0 +1,1 @@
+alert("O JavaScript foi ativado com sucesso!");
