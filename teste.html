@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da ONG / Projeto</title>
+    <!-- Link para o seu arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo-teste.css">
+    <!-- Script JS com defer para carregar em segundo plano -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR (AZUL) -->
+    <nav class="top-nav">
+        <div class="container">
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#o-que-fazemos">O Que Fazemos</a>
+            <a href="#onde-trabalhamos">Onde Trabalhamos</a>
+            <a href="#recursos">Recursos</a>
+        </div>
+    </nav>
+
+    <!-- 2. CABEÇALHO PRINCIPAL (LOGO E BOTÕES) -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <!-- Logo com os corações coloridos -->
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo do Projeto">
+            </div>
+            <!-- Botões de Ação e Busca à Direita -->
+            <div class="header-actions">
+                <a href="#doar" class="btn btn-doar">Doar</a>
+                <a href="#junte-se" class="btn btn-junte">Junte-se</a>
+                <button class="search-btn" aria-label="Buscar">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 3. SEÇÃO HISTÓRIA -->
+        <section id="quem-somos" class="section-historia">
+            <div class="container grid-2-colunas">
+                <div class="coluna-imagem">
+                    <img src="imagens/historia.jpg" alt="Crianças sorrindo">
+                </div>
+                <div class="coluna-texto">
+                    <h2>História</h2>
+                    <p>Texto sobre a história da organização aqui. Use linhas curtas e parágrafos bem espaçados como no seu desenho.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO PROJETOS (GRID DE 4 COLUNAS) -->
+        <section id="o-que-fazemos" class="section-projetos">
+            <div class="container">
+                <h2 class="titulo-centralizado">Projetos</h2>
+                
+                <div class="grid-4-colunas">
+                    <!-- Projeto 1 -->
+                    <article class="card-projeto">
+                        <img src="imagens/projeto1.jpg" alt="Foto do Projeto 1">
+                        <p>Descrição curta sobre o projeto 1 logo abaixo da foto.</p>
+                    </article>
+                    <!-- Projeto 2 -->
+                    <article class="card-projeto">
+                        <img src="imagens/projeto2.jpg" alt="Foto do Projeto 2">
+                        <p>Descrição curta sobre o projeto 2 logo abaixo da foto.</p>
+                    </article>
+                    <!-- Projeto 3 -->
+                    <article class="card-projeto">
+                        <img src="imagens/projeto3.jpg" alt="Foto do Projeto 3">
+                        <p>Descrição curta sobre o projeto 3 logo abaixo da foto.</p>
+                    </article>
+                    <!-- Projeto 4 -->
+                    <article class="card-projeto">
+                        <img src="imagens/projeto4.jpg" alt="Foto do Projeto 4">
+                        <p>Descrição curta sobre o projeto 4 logo abaixo da foto.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SEÇÃO CARROSSEL (SETAS DE NAVEGAÇÃO) -->
+        <section class="section-carrossel">
+            <div class="container carrossel-controles">
+                <button class="seta-carrossel" aria-label="Anterior">◀</button>
+                <span class="carrossel-indicador">...</span>
+                <button class="seta-carrossel" aria-label="Próximo">▶</button>
+            </div>
+        </section>
+
+        <!-- 6. SEÇÃO EM ZIGUE-ZAGUE (FUNDO AMARELO CLARO) -->
+        <section class="section-destaques-amarela">
+            <div class="container grid-zigue-zague">
+                
+                <!-- Bloco Rosa do desenho (pode usar uma classe CSS para o fundo rosa) -->
+                <div class="bloco-texto bloco-rosa">
+                    <p>Texto em destaque dentro do bloco com a cor de fundo diferenciada.</p>
+                </div>
+                <div class="bloco-imagem">
+                    <img src="imagens/destaque1.jpg" alt="Crianças brincando ao ar livre">
+                </div>
+
+                <!-- Segunda linha invertida -->
+                <div class="bloco-imagem">
+                    <img src="imagens/destaque2.jpg" alt="Inclusão digital / Sala de aula">
+                </div>
+                <div class="bloco-texto">
+                    <p>Outro texto explicativo alternando o lado com a imagem de cima.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. RODAPÉ (AZUL ESCURO) -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Nome do Projeto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

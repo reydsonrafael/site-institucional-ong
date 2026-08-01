@@ -1,0 +1,259 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Substitua pela fonte webfont/local que escolher */
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Suaviza as bordas das imagens */
+}
+
+/* Container para centralizar o conteúdo e dar margem nas laterais */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   2. BARRA DE NAVEGAÇÃO SUPERIOR (AZUL)
+   ========================================================================== */
+.top-nav {
+    background-color: #3f51b5; /* O azul idêntico ao do coração do logo */
+    padding: 12px 0;
+}
+
+.top-nav .container {
+    display: flex;
+    justify-content: center; /* Centraliza os links do menu */
+    gap: 30px; /* Espaço entre os links */
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.top-nav a:hover {
+    opacity: 0.8;
+}
+
+/* ==========================================================================
+   3. CABEÇALHO PRINCIPAL (LOGO E BOTÕES)
+   ========================================================================== */
+.main-header {
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, botões na direita */
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajuste o tamanho do seu logo aqui */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Botões do Topo */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-doar {
+    background-color: #ffd54f; /* Amarelo vivo do botão doar */
+    color: #000000;
+}
+
+.btn-doar:hover {
+    background-color: #ffca28;
+}
+
+.btn-junte {
+    background-color: #ffeb3b; /* Tom ligeiramente diferente para o junte-se */
+    color: #000000;
+}
+
+.btn-junte:hover {
+    background-color: #fdd835;
+}
+
+/* Botão de Busca */
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ==========================================================================
+   4. SEÇÕES GERAIS E LAYOUTS (GRID / FLEX)
+   ========================================================================== */
+main section {
+    padding: 60px 0; /* Espaçamento de respiro vertical entre seções */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: lowercase; /* Estilo do seu desenho em minúsculo */
+}
+
+.titulo-centralizado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid de duas colunas (Seção História) */
+.grid-2-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Grid de quatro colunas (Seção Projetos) */
+.grid-4-colunas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-projeto {
+    text-align: left;
+}
+
+.card-projeto img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Força as imagens a ficarem quadradas como no desenho */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #000000; /* Borda preta das caixas do desenho */
+}
+
+/* Controles do Carrossel */
+.section-carrossel {
+    padding: 20px 0;
+}
+
+.carrossel-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seta-carrossel {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   5. SEÇÃO EM ZIGUE-ZAGUE (FUNDO AMARELO CLARO)
+   ========================================================================== */
+.section-destaques-amarela {
+    background-color: #fffde7; /* Amarelo bem suave de fundo */
+}
+
+.grid-zigue-zague {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Remove os espaços entre os blocos para ficarem colados como no desenho */
+    gap: 0; 
+}
+
+.grid-zigue-zague .bloco-texto,
+.grid-zigue-zague .bloco-imagem img {
+    width: 100%;
+    height: 350px; /* Força uma altura padrão para os blocos */
+    object-fit: cover;
+}
+
+.grid-zigue-zague .bloco-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Bloco específico com fundo rosa */
+.bloco-rosa {
+    background-color: #ffcdd2; /* Rosa suave do desenho */
+}
+
+/* ==========================================================================
+   6. RODAPÉ (AZUL ESCURO)
+   ========================================================================== */
+.main-footer {
+    background-color: #3f51b5; /* Mesmo azul do topo */
+    color: #ffffff; /* Texto branco para dar contraste */
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   7. RESPONSIVIDADE (PARA CELULAR)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid-2-colunas,
+    .grid-zigue-zague {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4-colunas {
+        grid-template-columns: repeat(2, 1fr); /* 2 por linha no mobile */
+    }
+
+    /* Ajuste para o zigue-zague não quebrar a ordem visual no celular */
+    .grid-zigue-zague .bloco-imagem {
+        order: -1; 
+    }
+}
