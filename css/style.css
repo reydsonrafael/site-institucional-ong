@@ -5,8 +5,14 @@
 }
 
 :root{
-    --cor_fundo_pagina: #F8F9FB;
     --cor_base_cards: #FFF;
+    --cor_fundo_pagina: #F8F9FB;
+    --cor_amarelo: #FDDA04;
+    --cor_azul: #0199F1;
+    --cor_vermelho: #F91030;
+    --cor_rosa_pastel: #FFC8C8;
+    --cor_amarelo:_pastel #FFFEC5;
+    
 }
 main{
     background-color: var(--cor_fundo_pagina);
@@ -16,6 +22,8 @@ main{
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
+    color:white;
+    background-color: var(--cor_azul);
 }
 #segubdo_menu{
     display: flex;
