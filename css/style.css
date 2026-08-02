@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --cor_fundo_pagina: #F8F9FB;
+    --cor_base_cards: #FFF;
+}
+main{
+    background-color: var(--cor_fundo_pagina);
+    padding: 20px;
+}
+#primeiro_menu{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+#segubdo_menu{
+    display: flex;
+}
+#img_logo{
+    height: 150px;
+}
+#historia{
+    background-color: var(--cor_base_cards);
+    padding: 20px;
+}
+#banner_historia{
+    display: flex;
+}
+ #banner_historia img{
+    height: 600px;
+ }
