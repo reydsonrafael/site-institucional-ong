@@ -25,11 +25,23 @@ main{
     color:white;
     background-color: var(--cor_azul);
 }
-#segubdo_menu{
+#primeiro_menu a {
+    text-decoration: none;
+    color: #FFFF;
+}
+#segundo_menu{
     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+#div_botoes_e_pesquisa{
+    
 }
 #img_logo{
     height: 150px;
+    
 }
 #historia{
     background-color: var(--cor_base_cards);
