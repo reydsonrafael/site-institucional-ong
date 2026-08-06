@@ -94,7 +94,7 @@ main{
 }
 
 footer{
-    background-color: var(--cor_azul);
+    background-color: var(--cor_rosa_pastel);
     color:var(--cor_base_cards);
     height: 50px;
     display: flex;
