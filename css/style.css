@@ -12,6 +12,7 @@
     --cor_vermelho: #F91030;
     --cor_rosa_pastel: #FFC8C8;
     --cor_amarelo:_pastel #FFFEC5;
+    --cor_azul_pastel:#B8E5FF;
     
 }
 main{
@@ -43,9 +44,21 @@ main{
     height: 150px;
     
 }
+
+.conteiners_principais h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #historia{
     background-color: var(--cor_base_cards);
     padding: 20px;
+    margin-bottom: 40px;
+}
+#projetos{
+   background-color:var(--cor_base_cards);
+    padding: 20px;
+    margin-bottom: 40px;
 }
 #banner_historia{
     display: flex;
@@ -53,3 +66,37 @@ main{
  #banner_historia img{
     height: 600px;
  }
+#conteiner_card_projetos{
+    display: flex;
+    flex-wrap:wrap;
+}
+.card_projeto{
+    background-color: var(--cor_azul_pastel);
+    padding: 50px;
+    gap: 20px;
+    width: 445px;
+    border-radius: 20px;
+    
+}
+ .card_projeto img{
+    height: 300px;
+    border-radius: 20px;
+ }
+
+ #conteiner_card_projetos{
+    display:flex;
+    justify-content: space-around;
+ }
+
+ .conteudo_baner{display: flex;}
+ .conteudo_baner img{
+    height: 480px;
+}
+
+footer{
+    background-color: var(--cor_azul);
+    color:var(--cor_base_cards);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
