@@ -7,7 +7,7 @@
       max-width: 400px;   /* Define um tamanho limite para ela não ficar gigante */
       height: auto;       /* Mantém a proporção correta sem achatar a foto */
       object-fit: contain;
-      border: solid 20px red; /* Sua borda de teste vai continuar funcionando */
+    transform: rotate(90deg);
   }
 }
 
@@ -74,9 +74,14 @@ main{
     /*height: 400px;*/
 }
  #banner_historia img{
-    width: 600px;
+    /*width: 600px;
     height: auto;
-    object-fit:contain;
+    object-fit:contain;*/
+     width: auto;           /* Libera a largura fixa de 600px */
+    max-height: 400px;     /* Define um limite vertical para a foto */
+    height: auto;
+    transform: rotate(90deg); 
+    transform-origin: center;
  }
 
 #texto_section_historia{
