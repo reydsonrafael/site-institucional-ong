@@ -31,7 +31,7 @@
 
 :root{
     --cor_base_cards: #FFF;
-    --cor_fundo_pagina: #ff0000;/*essa é a cor certa, a que esta atual é para teste #F8F9FB*/
+    --cor_fundo_pagina: #F8F9FB;
     --cor_amarelo: #FDDA04;
     --cor_azul: #0199F1;
     --cor_vermelho: #F91030;
@@ -39,6 +39,9 @@
     --cor_amarelo_pastel: #FFFEC5;
     --cor_azul_pastel:#B8E5FF;
     
+}
+h2{
+    font-size: 48px;
 }
 main{
     background-color: var(--cor_fundo_pagina);
@@ -112,7 +115,17 @@ main{
     gap: 20px;
     width: 445px;
     border-radius: 20px;
+    margin-bottom: 20px;
     
+}
+
+.cabecalho_card_projetos{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card_projeto h3{
+    font-size:24px;
 }
  .card_projeto img{
     height: 300px;
