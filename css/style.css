@@ -1,14 +1,25 @@
 /*hora de adicionar responsividade! :)*/
 
-@media (max-width: 1048px) {
-  /* Mudamos o seletor para ganhar do CSS geral */
-  #banner_historia img {
-      width: 100%;        /* Faz a imagem ocupar a largura disponível na tela menor */
-      max-width: 400px;   /* Define um tamanho limite para ela não ficar gigante */
-      height: auto;       /* Mantém a proporção correta sem achatar a foto */
-      object-fit: contain;
-    transform: rotate(90deg);
-  }
+/* --- 1. Para telas médias (Menores que 1048px) --- */
+
+
+/* --- 2. Para telas pequenas/Celular (Menores que 750px) --- */
+@media (max-width: 1050px) {
+    #banner_historia {
+        display: flex;
+        flex-direction: column; /* Mantém empilhado no celular */
+        align-items: center;
+    }
+
+    /* Usamos um seletor mais específico para forçar o navegador a aceitar o comando */
+    #banner_historia #imagem_historia {
+        width: 100%;        
+        max-width: 250px;       /* Diminuímos o limite para a foto não cobrir a tela do celular */
+        height: auto;       
+        object-fit: contain;
+        transform: none;  
+        margin-bottom: 20px;      /* CORRIGIDO: Desgira a foto completamente */
+    }
 }
 
 /*________________________________________________*/
@@ -20,7 +31,7 @@
 
 :root{
     --cor_base_cards: #FFF;
-    --cor_fundo_pagina: #F8F9FB;
+    --cor_fundo_pagina: #ff0000;/*essa é a cor certa, a que esta atual é para teste #F8F9FB*/
     --cor_amarelo: #FDDA04;
     --cor_azul: #0199F1;
     --cor_vermelho: #F91030;
@@ -63,6 +74,7 @@ main{
     background-color: var(--cor_base_cards);
     padding: 20px;
     margin-bottom: 40px;
+    
 }
 #projetos{
    background-color:var(--cor_base_cards);
